@@ -1,0 +1,4 @@
+.deactived{
+    pointer-events: none;
+    cursor: default
+}

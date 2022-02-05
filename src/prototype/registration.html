@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>NHS || Registration</title>
+    <link rel="stylesheet" href="style.css" />
+	<script  type="text/javascript" src="passwordCheck.js"></script>
+</head>
+
+<body>
+  <div class="formReg">
+    <fieldset>
+      <legend style="color:#005EB8;">Please fill out the form carefully</legend>
+            <form name="registration" action="register.php" method="post">
+            <input type="text" name="username" placeholder="Email address..." required />
+            <input type="password" name="password" placeholder="Password..." required />
+			      <input type="password" name="password2" placeholder=" Repeat Password" required />
+                  <a href="surveydetails.html" target="_blank">Survey Details</a>
+
+
+            <table width="290">
+                <tr>
+                    <td><label>
+                            <input type="checkbox" name="Terms0" value="checkbox" id="Terms_0" required >
+                            1. I confirm that I have read the information sheet for the above study. I have had the opportunity to consider the information, ask questions and have had these answered satisfactorily.</label></td>
+                </tr>
+                <tr>
+                    <td><label>
+                            <input type="checkbox" name="Terms1" value="checkbox" id="Terms_1" required >
+                            2. I understand that my participation is voluntary and that I am free to withdraw at any time without giving any reason up to 6 weeks after the duration of the study, without my role being affected.</label></td>
+                </tr>
+                <tr>
+                    <td><label>
+                            <input type="checkbox" name="Terms2" value="checkbox" id="Terms_2" required >
+                            3. I understand that the information collected about me will be used to support other research in the future and may be shared anonymously with other researchers.</label></td>
+                </tr>
+                <tr>
+                    <td><label>
+                            <input type="checkbox" name="Terms3" value="checkbox" id="Terms_3" required >
+                            4. I understand that all personal data about me (e.g., contact details) will be kept confidential and stored securely.</label></td>
+                </tr>
+                <tr>
+                    <td><label>
+                            <input type="checkbox" name="Terms4" value="checkbox" id="Terms_4" required >
+                            5. I understand that to the best of the research team’s ability, my data will be anonymized so that I cannot be identified in the research, or in any extracts that might be used in the reporting of the results and in future publications. </label></td>
+                </tr>
+                <tr>
+                    <td><label>
+                            <input type="checkbox" name="Terms5" value="checkbox" id="Terms_5" required >
+                            6. I agree to take part in the above study.</label></td>
+                </tr>
+            </table>
+
+            <div class="buttonHolder"><input type="submit" name="submit" value="Register" /></div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>

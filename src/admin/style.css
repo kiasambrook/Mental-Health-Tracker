@@ -1,0 +1,593 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Quicksand', sans-serif;
+  background-color: white;
+}
+
+.clearfix:before, .clearfix:after{
+     content: "";
+     display: table;
+}
+.clearfix:after{
+     clear: both;
+}
+.formLog {
+  padding: 50px;
+  width: 530px;
+  height: 560px;
+  display: block;
+  text-align: center;
+  border: 2px solid #FFF;
+  border-radius: 40px;
+  margin: 100px auto;
+  background-color:white;
+}
+
+.formReg {
+  padding: 50px;
+  width: 550px;
+  height: 1200px;
+  display: block;
+  text-align: center;
+  border: 2px solid #FFF;
+  border-radius: 40px;
+  margin: 15px auto;
+  background-color:white;
+}
+.formLog form input[type='text'], input[type='email'],
+input[type='password'] {
+     width: 265px;
+     padding: 10px;
+     color: #333;
+     font-size: 14px;
+     margin-top: 20px;
+     display: block;
+     border: 2px solid #005EB8;
+     border-radius: 7px;
+}
+.formLog form input[type='submit']{
+
+  margin-top: 99px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #005EB8;
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 1px;
+  border-radius: 40px;
+  border-color: #005EB8;
+  border-style: solid;
+  padding: 12px 36px;
+  cursor: pointer;
+}
+
+.formReg form input[type='text'], input[type='email'],
+input[type='password'] {
+     width: 265px;
+     padding: 10px;
+     color: #333;
+     font-size: 14px;
+     margin-top: 20px;
+     display: block;
+     border: 2px solid #005EB8;
+     border-radius: 7px;
+     margin-bottom: 20px;
+}
+.formReg form input[type='submit']{
+
+  margin-top: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #005EB8;
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 1px;
+  border-radius: 40px;
+  border-color: #005EB8;
+  border-style: solid;
+  padding: 12px 36px;
+  cursor: pointer;
+}
+
+.updateDeForm {
+  padding: 30px;
+  width: 530px;
+  height: 785px;
+  display: block;
+  text-align: center;
+  border: 2px solid #FFF;
+  border-radius: 40px;
+  margin: 80px auto;
+  background-color:white;
+}
+
+.updateDeForm form input[type='submit']{
+
+  margin-top: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #005EB8;
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 1px;
+  border-radius: 40px;
+  border-color: #005EB8;
+  border-style: solid;
+  padding: 12px 36px;
+  cursor: pointer;
+}
+
+.updateDeForm form select, input {
+  width: 300px;
+  padding: 10px;
+  color: #333;
+  font-size: 14px;
+  display: block;
+  border: 2px solid #005EB8;
+  border-radius: 7px;
+  margin-top: 20px;
+}
+
+.formEmUpdate {
+  padding: 50px;
+  width: 530px;
+  height: 300px;
+  display: block;
+  text-align: center;
+  border: 2px solid #FFF;
+  border-radius: 40px;
+  margin: 100px auto;
+  background-color:white;
+}
+
+.formEmUpdate form input[type='email'] {
+     width: 265px;
+     padding: 10px;
+     color: #333;
+     font-size: 14px;
+     margin-top: 20px;
+     display: block;
+     border: 2px solid #005EB8;
+     border-radius: 7px;
+     margin-bottom: 20px;
+}
+
+.formEmUpdate form input[type='submit']{
+
+  margin-top: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #005EB8;
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 1px;
+  border-radius: 40px;
+  border-color: #005EB8;
+  border-style: solid;
+  padding: 12px 36px;
+  cursor: pointer;
+}
+
+
+.container {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding: 0;
+}
+
+.nav {
+  min-height: 9vh;
+  background-color: #005EB8;
+  color: #FFF;
+  padding-top: 2.5px;
+  padding-left: 130px;
+  padding-right: 130px;
+  padding-bottom: 0;
+  overflow: hidden;
+
+}
+
+.content {
+  text-align: center;
+  padding-left: 130px;
+  padding-right: 130px;
+  margin-top: 250px;
+
+}
+
+.content-welcome {
+  text-align: center;
+  margin-top: 84px;
+  padding-left: 130px;
+  padding-right: 130px;
+}
+
+.content-welcome h1 {
+  color:#005EB8;
+  font-size: 50px;
+}
+
+.content-welcome p {
+  font-size:25px;
+  margin-top:84px;
+}
+
+.buttonStyle {
+
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #005EB8;
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 1px;
+  border-radius: 40px;
+  padding: 12px 36px;
+
+}
+
+.buttonStyleRed {
+
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #ce1212;
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 1px;
+  border-radius: 40px;
+  padding: 12px 36px;
+
+}
+
+.buttonStyle:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.loginBox {
+  display: inline-block;
+  margin-right: 150px;
+
+}
+
+.regBox {
+  display: inline-block;
+  margin-left: 150px;
+}
+
+
+.formLog form {
+  display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+}
+
+.formLog .buttonHolder{ text-align: center; }
+
+.formReg form {
+  display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+
+}
+
+.formReg .buttonHolder{ text-align: center; }
+
+.updateDeForm form {
+  display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+
+}
+
+.formEmUpdate form {
+  display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+
+}
+
+.navRight {float: right;}
+
+.left {
+  float: left;
+  margin-right: 33px;
+}
+
+.buttonC {
+    /* Reset */
+    background-color: transparent;
+    border-color: transparent;
+
+    /* Cursor */
+    cursor: pointer;
+
+    /* Size */
+    height: 32px;
+    width: 32px;
+
+    /* Used to position the inner */
+    position: relative;
+}
+
+.button__line {
+    /* Background color */
+    background-color: #005EB8;
+
+    /* Position */
+    position: absolute;
+
+    /* Size */
+    height: 1px;
+    width: 100%;
+}
+
+.button__line--first {
+    /* Position */
+    left: 0px;
+    top: 50%;
+    transform: translate(0%, -50%) rotate(45deg);
+
+    /* Size */
+    height: 1px;
+    width: 100%;
+}
+
+.button__line--second {
+    /* Position */
+    left: 50%;
+    top: 0px;
+    transform: translate(-50%, 0%) rotate(45deg);
+
+    /* Size */
+    height: 100%;
+    width: 1px;
+}
+
+.monthsGrid {
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-gap: 2px;
+  border: 2px solid #005EB8;
+  background: #005EB8;
+}
+
+.monthsGridButton {
+  color: #005EB8;
+  background-color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: 1px;
+  padding: 12px 36px;
+}
+
+.viewDeS {
+  padding: 20px;
+  width: 530px;
+  height: 450px;
+  display: block;
+  text-align: center;
+  border: 2px solid #FFF;
+  border-radius: 40px;
+  margin: 100px auto;
+  background-color:white;
+}
+
+.updateButtons a {
+  margin-bottom: 10px;
+}
+
+.updateButtons {
+
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.monthsGridButton:hover {
+  text-decoration: none;
+}
+
+.contetDash {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-left: 100px;
+  height: 400px;
+  margin-top: 80px;
+  margin-bottom: 60px;
+
+}
+
+.contentD {
+  text-align: center;
+  padding-left: 130px;
+  padding-right: 130px;
+  margin-top: 30px;
+
+}
+
+.dashTitle {
+  text-align: center;
+  color: #005EB8;
+  padding-left: 350px;
+  padding-right: 350px;
+}
+
+.dashTitle p {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.allContent {
+  margin-top: 20px;
+}
+
+.contentD ul {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  grid-row-gap: 5px;
+  grid-column-gap: 10px;
+  margin-top: 30px;
+}
+
+.dashP {
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  margin-top: 60px;
+  grid-column-gap: 50px;
+}
+
+.footer {
+  width: 100%;
+  height: 100px;
+  color: white;
+}
+
+
+
+@media all and (max-width: 500px) {
+
+  .nav {
+    padding-left: 0;
+    padding-right: 0;
+    text-align:center;
+  }
+
+  .content-welcome {
+      margin-top: 0;
+      padding-left: 10px;
+      padding-right: 10px;
+  }
+
+  .content-welcome h1 {
+    font-size: 40px;
+  }
+
+  .content-welcome p {
+    font-size:20px;
+    margin-top:0px;
+  }
+
+  .content-welcome br {
+    display: none;
+  }
+
+  .content {
+      margin-top: 50px;
+      padding-left: 10px;
+      padding-right: 10px;
+  }
+
+  .loginBox{
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+
+
+  .regBox {
+    margin-left: 0;
+  }
+
+  .formLog {
+    width: 80%;
+  }
+
+  .formReg {
+    width: 90%;
+  }
+
+  .updateDeForm {
+    width: 95%;
+  }
+
+  .viewDeS {
+    width: 90%
+  }
+
+  .formEmUpdate {
+    width: 90%;
+  }
+
+  .formEmUpdate form input[type='submit'], input[type='text'] {
+    width: 230px;
+  }
+
+
+  .formLog form input[type='text'], input[type='email'],
+  input[type='password'] {
+    width: 90%;
+  }
+
+  .formLog form input[type='submit'] {
+    width: 230px;
+  }
+
+  .formReg form input[type='text'], input[type='email'],
+  input[type='password'] {
+    width: 90%;
+  }
+
+  .formReg form input[type='submit'] {
+    width: 265px;
+  }
+
+  .dashTitle {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .dashP {
+    display: inline-block;
+    margin-top: 0px;
+  }
+
+  .contetDash {
+    display: none;
+  }
+
+  .contentD {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .monthsGrid {
+    grid-template-columns: auto auto;
+    grid-gap: 1px;
+    border: 1px solid #005EB8;
+  }
+
+  .updateButtons {
+    margin-top: 50px;
+    display: inline-block;
+  }
+
+  .contentD ul {
+    grid-template-columns: auto;
+}
+
+
+}
+
+@media all and (max-width: 1750px) {
+
+  .contetDash {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+}
+/* CSS Document */

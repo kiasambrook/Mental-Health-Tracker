@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NHS || Login</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="formLog">
+    <fieldset>
+      <legend style="color:#005EB8;">Please enter your email address and password</legend>
+    <form action="login.php" method="post" name="login">
+    <input type="text" name="username" placeholder="Email address..." required />
+    <input type="password" name="password" placeholder="Password..." required />
+    <p style="font-weight:bold; margin-top:8px;">Forgot your password?</p>
+    <div class="buttonHolder"><input name="submit" type="submit" value="Login" /></div>
+    <div class="buttonHolder" style="margin-top:30px;"><button class="buttonC" onclick="$('#loginForm').modal('hide');">
+    <div class="button__line button__line--first"></div>
+    <div class="button__line button__line--second"></div>
+  </button></div>
+    </fieldset>
+    </form>
+
+    </div>
+
+</body>
+</html>

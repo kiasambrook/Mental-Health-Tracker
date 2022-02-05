@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monthly Mental Health Survey</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <div class="container">
+    <div class="nav"><h2>Monthly Mental Health Survey</h2></div>
+    <div class="content">
+
+      <div class="loginBox">
+
+      <h2 style="color:#777777; margin-bottom:30px;"><b>Already a user?</b></h2>
+      <p style="font-size:20px; margin-bottom:30px;">If you already have an account,<br> please click the button below to <br>sign in</p>
+      <a href="#" class='loginButton buttonStyle' data-toggle='modal' data-target='#loginForm'>
+        Sign in
+      </a>
+
+      </div>
+
+      <div class="regBox">
+
+      <h2 style="color:#777777; margin-bottom:30px;"><b>Don't have an account?</b></h2>
+      <p style="font-size:20px; margin-bottom:30px;">If you don't have an account,<br> please click the button below to <br>register.</p>
+      <a href="#" class='regButton buttonStyle' data-toggle='modal' data-target='#regForm'>
+        Register
+      </a>
+
+      </div>
+
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class='modal fade' id='loginForm'> </div>
+  <div class='modal fade' id='regForm'> </div>
+
+  <script>
+    $(document).on('click','a.loginButton',function(){
+        $('#loginForm').load('login.html');
+    });
+    $(document).on('click','a.regButton',function(){
+      $('#regForm').load('registration.html');
+    });
+  </script>
+
+</body>
+
+</html>

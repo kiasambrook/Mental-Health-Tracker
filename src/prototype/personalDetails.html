@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NHS Register || Personal Details</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+  
+  
+    <div class="updateDeForm">
+       <form id="personalDetails" action="insertpersonaldetails.php" method="post" name="personalDetails">
+           <fieldset>
+             <legend style="color:#005EB8;">Enter Personal Details</legend>
+             <p>Next we ask about some basic demographics that will help us to understand the sample on which this research is based.</p>
+              
+              <!--Gender-->
+               <select id="gender" name="gender" class="pdInput" required>
+                <option value="" disabled selected>Gender...</option>
+                   <option value="male">Male</option>
+                   <option value="female">Female</option>
+                   <option value="non-binary">Non-Binary</option>
+                   <option value="na">Perfer Not to Say</option>
+               </select>
+               
+               <br>
+               
+               <!--Age-->
+               <input type="number" max="100" min="18" name="age" id="age" class="pdInput" placeholder="Age (in years):" required> 
+               
+               <br>
+               
+               <!--Ethnicity--> 
+               <select id="ethnicity" name="ethnicity" class="pdInput" required>
+                   <option value="" disabled selected>Ethnicity:</option>
+                   <option value="british">British</option>
+                   <option value="irish">Irish</option>
+                   <option value="european">European</option>
+                   <option value="caribbean">Caribbean</option>
+                   <option value="african">African</option>
+                   <option value="asian">Asian</option>
+                   <option value="mixed">Mixed</option>
+                   <option value="other">Other</option>
+               </select>
+               
+               <br>
+               
+               <!--Family Status-->
+               <select id="familystatus" name="familystatus" class="pdInput" required>
+                <option value="" disabled selected>Family-Status:</option>
+                   <option value="single">Single</option>
+                   <option value="married/civil">Married or Civil Partnership</option>
+                   <option value="co-habiting">Co-habiting</option>
+                   <option value="seperated">Seperated</option>
+                   <option value="divorced">Divorced</option>
+                   <option value="widowed">Widowed</option>
+               </select>
+               
+               <br>
+               
+               <!--Number of Dependents-->
+               <input type="number" name="dependents" id="dependents" class="pdInput" min="0" max="30" required placeholder="Number of Dependents (under 18):">
+
+               <br>
+               
+               <!--Caring Responsibilities--> 
+               <select id="caring" name="caring" class="pdInput" required>
+                <option value="" disabled selected>Do you have any caring responsibilities for family, friends or
+                    neighbours?</option>
+                   <option value="yes">Yes</option>
+                   <option value="no">No</option>
+               </select>
+               
+               <br>
+               
+               <!--Hospital-->
+               <select id="hospital" name="hospital" class="pdInput" required>
+                <option value="" disabled selected>Which hospital do you work at?</option>
+                   <option value="bronglais">Bronglais General Hospital</option>
+                   <option value="glangwili">Glangwili General Hospital</option>
+                   <option value="prince-phillip">Prince Phillip Hospital</option>
+                   <option value="withibush">Withibush General Hospital</option>
+                   <option value="other">Other Location</option>
+               </select>
+
+
+               <br>
+               
+                <!--Staff Role-->
+               <select id="staffrole" name="staffrole" class="pdInput" required>
+                <option value="" disabled selected>Staff role:</option>
+                   <option value="allied-health-pro">Allied Health Professional</option>
+                   <option value="adminstration">Administrative Services</option>
+                   <option value="emergency">Emergency Services</option>
+                   <option value="health-sciences">Health Sciences</option>
+                   <option value="medical/dental">Medical and Dental</option>
+                   <option value="nursing/midwifery">Nursing and Midwifery</option>
+                   <option value="support">Support Services</option>
+               </select>
+               
+               <br>
+               
+               <!--Based at work-->
+               <select id="based" name="based" class="pdInput" required>
+                <option value="" disabled selected>Where are you currently based at work?</option>
+                   <option value="green-zone">Green Zone</option>
+                   <option value="red-zone">Red Zone</option>
+                   <option value="home">Working from Home</option>
+                   <option value="other">Other</option>
+               </select>
+               
+               <br>
+               
+               <input type="submit" id="pdSubmit" name="pdSubmit" value="Submit">
+               
+           </fieldset>
+       </form>
+   </main>
+</body>
+</html>
